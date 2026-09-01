@@ -18,6 +18,7 @@ export default function Philosophy() {
     <section className="section philosophy">
       <div className="section__inner">
         <p className="eyebrow">Operating Philosophy</p>
+        <h2 className="section__title">What I believe about growth.</h2>
         <div className="philosophy__grid">
           {principles.map((p, i) => (
             <div className="philosophyCard" key={p.title}>

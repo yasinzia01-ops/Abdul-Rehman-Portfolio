@@ -1,5 +1,6 @@
 import Nav from "./components/Nav";
 import Hero from "./components/Hero";
+import ProofStrip from "./components/ProofStrip";
 import About from "./components/About";
 import Services from "./components/Services";
 import CaseStudies from "./components/CaseStudies";
@@ -18,6 +19,7 @@ export default function Home() {
       <Nav />
       <main id="content">
         <Hero />
+        <ProofStrip />
         <About />
         <Services />
         <CaseStudies />

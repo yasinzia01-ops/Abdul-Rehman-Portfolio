@@ -1,9 +1,11 @@
-const categories = [
-  { title: "Lead Generation", desc: "Service businesses & local lead gen" },
-  { title: "E-commerce Ads", desc: "Meta + Google shopping campaigns" },
-  { title: "Local Business", desc: "Clinics, contractors, professional services" },
-  { title: "B2B / Coaching", desc: "Consultants, coaches, B2B pipelines" },
-];
+import ImageCarousel from "./ImageCarousel";
+
+const categories = ["Lead Generation", "E-commerce Ads", "Local Business", "B2B / Coaching"];
+
+const items = Array.from(
+  { length: 14 },
+  (_, i) => `Project screenshot ${i + 1} — replace with real image`
+);
 
 export default function Portfolio() {
   return (
@@ -11,18 +13,17 @@ export default function Portfolio() {
       <div className="section__inner">
         <p className="eyebrow">Every industry</p>
         <h2 className="section__title">A range of campaigns and results</h2>
-        <div className="portfolio__grid">
+        <ul className="portfolio__categories">
           {categories.map((c) => (
-            <div className="portfolioCard" key={c.title}>
-              <div className="portfolioCard__image" aria-hidden="true">
-                <span>Screenshot placeholder</span>
-              </div>
-              <h3>{c.title}</h3>
-              <p>{c.desc}</p>
-            </div>
+            <li key={c}>{c}</li>
           ))}
-        </div>
+        </ul>
       </div>
+      <ImageCarousel
+        items={items}
+        ariaLabel="Portfolio screenshots across industries"
+        tileAspect="16 / 9"
+      />
     </section>
   );
 }
