@@ -1,0 +1,25 @@
+import { mailtoHref, site } from "../siteData";
+
+export default function Footer() {
+  return (
+    <footer className="footer">
+      <div className="section__inner footer__inner">
+        <a href="#top" className="footer__logo">
+          {site.name}
+        </a>
+        <div className="footer__links">
+          <a href={site.linkedin} target="_blank" rel="noopener noreferrer">
+            LinkedIn
+          </a>
+          <a href={site.instagram} target="_blank" rel="noopener noreferrer">
+            Instagram
+          </a>
+          <a href={mailtoHref}>{site.email}</a>
+        </div>
+        <p className="footer__copyright">
+          © {new Date().getFullYear()} {site.name}. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  );
+}
