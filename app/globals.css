@@ -888,12 +888,38 @@ img {
   }
 }
 
-/* Case study gallery */
+/* Case study gallery — carousel, same card styling as before */
 
-.caseGallery__grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+.caseGallery__head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.caseGallery__head .section__title {
+  margin-bottom: 0;
+}
+
+.caseGallery__track {
+  display: flex;
   gap: 1.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  scrollbar-width: none;
+}
+
+.caseGallery__track::-webkit-scrollbar {
+  display: none;
+}
+
+.caseGalleryCard {
+  scroll-snap-align: start;
+  flex: 0 0 calc(33.333% - 1rem);
 }
 
 .caseGalleryCard__image {
@@ -922,14 +948,14 @@ img {
 }
 
 @media (max-width: 900px) {
-  .caseGallery__grid {
-    grid-template-columns: 1fr 1fr;
+  .caseGalleryCard {
+    flex-basis: calc(50% - 0.75rem);
   }
 }
 
 @media (max-width: 600px) {
-  .caseGallery__grid {
-    grid-template-columns: 1fr;
+  .caseGalleryCard {
+    flex-basis: 85%;
   }
 }
 
