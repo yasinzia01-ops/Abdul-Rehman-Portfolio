@@ -6,28 +6,28 @@ import Image from "next/image";
 const testimonials = [
   {
     quote:
-      "Over the past decade, Abdul is the best growth partner I've worked with. He delivered a complex MVP fast, understood vague requirements, communicated clearly, and built a scalable complex system beyond expectations.",
+      "Over the past decade, Hamza is the best growth partner I've worked with. He delivered a complex MVP fast, understood vague requirements, communicated clearly, and built a scalable complex system beyond expectations.",
     name: "Frida Brunetti",
     role: "Founder, Veya",
     image: "/images/testimonials/Frida01.jpeg",
   },
   {
     quote:
-      "Abdul is a team player who works hard to deliver. Not calculative about the time needed to perfect things — he ensures the project is completed successfully. Always willing to help when required.",
+      "Hamza is a team player who works hard to deliver. Not calculative about the time needed to perfect things — he ensures the project is completed successfully. Always willing to help when required.",
     name: "Angela Tan",
     role: "Programme Director (Digital), Public Sector · GCC",
     image: "/images/testimonials/Tan02.jpeg",
   },
   {
     quote:
-      "Abdul's expertise in website design, development, and social media marketing is simply outstanding. Exceptional communication and unwavering commitment to deadlines. Invaluable to any project. I wholeheartedly recommend him.",
+      "Hamza's expertise in website design, development, and social media marketing is simply outstanding. Exceptional communication and unwavering commitment to deadlines. Invaluable to any project. I wholeheartedly recommend him.",
     name: "Matthew Palmer",
     role: "CEO, ITK Technologies",
     image: "/images/testimonials/Matthew03.jpeg",
   },
   {
     quote:
-      "This was not a standard website project. We required structured data architecture, backend logic, automated workflows and real time reporting dashboards. Abdul and his team delivered exceptionally.",
+      "This was not a standard website project. We required structured data architecture, backend logic, automated workflows and real time reporting dashboards. Hamza and his team delivered exceptionally.",
     name: "Aly Saghir",
     role: "Programme Director (Digital), Public Sector · GCC",
     image: "/images/testimonials/Aly04.jpeg",

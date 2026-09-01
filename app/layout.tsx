@@ -8,9 +8,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Abdul Rehman — Meta Ads & Google Ads Specialist",
+  title: "Hamza — Meta Ads & Google Ads Specialist",
   description:
-    "Abdul Rehman helps founders and service businesses turn ad budget into qualified leads through Meta Ads, Google Ads, and lead generation systems.",
+    "Hamza helps founders and service businesses turn ad budget into qualified leads through Meta Ads, Google Ads, and lead generation systems.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

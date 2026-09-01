@@ -2,8 +2,8 @@
 // Replace the placeholder values below with your real information.
 
 export const site = {
-  name: "Abdul Rehman",
-  initials: "AR",
+  name: "Hamza",
+  initials: "H",
   role: "Meta Ads & Google Ads Specialist",
   tagline: "Paid Ads & Lead Gen Specialist", // shown under the logo wordmark
   email: "hello@example.com", // TODO: replace with your real email

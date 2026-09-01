@@ -8,7 +8,6 @@ import Philosophy from "./components/Philosophy";
 import AboutMe from "./components/AboutMe";
 import Process from "./components/Process";
 import Testimonials from "./components/Testimonials";
-import Portfolio from "./components/Portfolio";
 import FAQ from "./components/FAQ";
 import FinalCTA from "./components/FinalCTA";
 import Footer from "./components/Footer";
@@ -27,7 +26,6 @@ export default function Home() {
         <AboutMe />
         <Process />
         <Testimonials />
-        <Portfolio />
         <FAQ />
         <FinalCTA />
       </main>
