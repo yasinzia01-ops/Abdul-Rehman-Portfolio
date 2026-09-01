@@ -1,14 +1,15 @@
 :root {
-  --bg: #ffffff;
-  --bg-alt: #f6f7f9;
-  --text: #111214;
-  --text-muted: #5b5f66;
-  --border: #e4e5e8;
-  --accent: #2952e3;
-  --accent-hover: #1f3fc4;
+  --bg: #0f0f10;
+  --bg-alt: #17181a;
+  --text: #ffffff;
+  --text-muted: #54595f;
+  --border: #202021;
+  --accent: #ccef4d;
+  --accent-hover: #b8db3a;
+  --accent-foreground: #0e0e0c;
   --radius: 10px;
   --max-width: 1120px;
-  color-scheme: light;
+  color-scheme: dark;
 }
 
 * {
@@ -31,11 +32,18 @@ body {
 body {
   min-height: 100%;
   background: var(--bg);
-  color: var(--text);
+  color: var(--text-muted);
   font-family: var(--font-inter), Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--text);
 }
 
 a {
@@ -58,7 +66,7 @@ img {
   left: -9999px;
   top: 0;
   background: var(--accent);
-  color: #fff;
+  color: var(--accent-foreground);
   padding: 0.75rem 1rem;
   z-index: 100;
 }
@@ -113,7 +121,7 @@ img {
 
 .btn--primary {
   background: var(--accent);
-  color: #fff;
+  color: var(--accent-foreground);
 }
 
 .btn--primary:hover {
@@ -142,7 +150,7 @@ img {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(15, 15, 16, 0.85);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--border);
 }
@@ -160,6 +168,7 @@ img {
 .nav__logo {
   font-weight: 700;
   font-size: 1.05rem;
+  color: var(--text);
 }
 
 .nav__links {
@@ -195,6 +204,7 @@ img {
   font-weight: 800;
   line-height: 1.1;
   margin-bottom: 1.5rem;
+  color: var(--text);
 }
 
 .hero__sub {
@@ -254,7 +264,7 @@ img {
   height: 3rem;
   border-radius: 50%;
   background: var(--accent);
-  color: #fff;
+  color: var(--accent-foreground);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -294,11 +304,13 @@ img {
   font-size: 1.4rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
+  color: var(--text);
 }
 
 .serviceCard__price {
   font-weight: 600;
   margin-bottom: 1.5rem;
+  color: var(--text);
 }
 
 .serviceCard__price span {
@@ -354,6 +366,7 @@ img {
   font-size: 1.15rem;
   font-weight: 700;
   margin-bottom: 1rem;
+  color: var(--text);
 }
 
 .caseCard__verified {
@@ -461,6 +474,7 @@ img {
 .credential__label {
   font-weight: 700;
   font-size: 0.9rem;
+  color: var(--text);
 }
 
 .credential__value {
@@ -539,6 +553,7 @@ img {
 .testimonialCard p {
   margin-bottom: 1.25rem;
   font-size: 1rem;
+  color: var(--text);
 }
 
 .testimonialCard footer {
@@ -549,6 +564,7 @@ img {
 
 .testimonialCard__name {
   font-weight: 700;
+  color: var(--text);
 }
 
 .testimonialCard__role {
@@ -572,6 +588,7 @@ img {
 .portfolioCard h3 {
   font-size: 1rem;
   margin-bottom: 0.25rem;
+  color: var(--text);
 }
 
 .portfolioCard p {
@@ -626,6 +643,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: var(--text);
 }
 
 .faqItem summary::-webkit-details-marker {
@@ -675,6 +693,7 @@ img {
 .finalCta__capacity {
   margin-top: 1.5rem;
   font-size: 0.85rem;
+  color: var(--text-muted);
 }
 
 /* Footer */
@@ -694,6 +713,7 @@ img {
 
 .footer__logo {
   font-weight: 700;
+  color: var(--text);
 }
 
 .footer__links {
