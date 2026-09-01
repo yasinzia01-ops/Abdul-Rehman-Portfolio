@@ -26,8 +26,31 @@ const caseStudies = [
   },
 ];
 
+// Rendered twice so "next" can always scroll forward — once the track
+// scrolls into the duplicated half, we silently jump back by exactly one
+// set-width (no animation) to the equivalent spot in the first half. The
+// content is identical there, so the reset is invisible and motion only
+// ever goes forward.
+const loopCaseStudies = [...caseStudies, ...caseStudies];
+
+const RESET_CHECK_DELAY_MS = 500;
+
 export default function CaseStudyGallery() {
   const trackRef = useRef<HTMLDivElement>(null);
+  const resetTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const maybeLoopReset = () => {
+    const track = trackRef.current;
+    if (!track) return;
+    const cards = track.querySelectorAll<HTMLElement>(".caseGalleryCard");
+    const firstDuplicate = cards[caseStudies.length];
+    if (!firstDuplicate) return;
+
+    const setWidth = firstDuplicate.offsetLeft - cards[0].offsetLeft;
+    if (track.scrollLeft >= setWidth - 4) {
+      track.scrollTo({ left: track.scrollLeft - setWidth, behavior: "auto" });
+    }
+  };
 
   const scrollByCard = (direction: 1 | -1) => {
     const track = trackRef.current;
@@ -35,17 +58,11 @@ export default function CaseStudyGallery() {
     const card = track.querySelector<HTMLElement>(".caseGalleryCard");
     const cardWidth = card ? card.offsetWidth + 24 : track.clientWidth * 0.8;
 
-    const atEnd =
-      direction === 1 &&
-      track.scrollLeft + track.clientWidth >= track.scrollWidth - cardWidth / 2;
-    const atStart = direction === -1 && track.scrollLeft <= cardWidth / 2;
+    track.scrollBy({ left: direction * cardWidth, behavior: "smooth" });
 
-    if (atEnd) {
-      track.scrollTo({ left: 0, behavior: "smooth" });
-    } else if (atStart) {
-      track.scrollTo({ left: track.scrollWidth, behavior: "smooth" });
-    } else {
-      track.scrollBy({ left: direction * cardWidth, behavior: "smooth" });
+    if (direction === 1) {
+      if (resetTimer.current) clearTimeout(resetTimer.current);
+      resetTimer.current = setTimeout(maybeLoopReset, RESET_CHECK_DELAY_MS);
     }
   };
 
@@ -78,8 +95,12 @@ export default function CaseStudyGallery() {
         </div>
       </div>
       <div className="caseGallery__track" ref={trackRef}>
-        {caseStudies.map((item) => (
-          <figure className="caseGalleryCard" key={item.title}>
+        {loopCaseStudies.map((item, i) => (
+          <figure
+            className="caseGalleryCard"
+            key={`${item.title}-${i}`}
+            aria-hidden={i >= caseStudies.length}
+          >
             <div className="caseGalleryCard__image">
               <Image
                 src={item.image}
