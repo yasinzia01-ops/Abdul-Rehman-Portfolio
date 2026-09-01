@@ -1,11 +1,12 @@
 import { mailtoHref, site } from "../siteData";
+import Logo from "./Logo";
 
 export default function Footer() {
   return (
     <footer className="footer">
       <div className="section__inner footer__inner">
         <a href="#top" className="footer__logo">
-          {site.name}
+          <Logo />
         </a>
         <div className="footer__links">
           <a href={site.linkedin} target="_blank" rel="noopener noreferrer">

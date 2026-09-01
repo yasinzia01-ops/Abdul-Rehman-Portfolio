@@ -3,7 +3,9 @@
 
 export const site = {
   name: "Abdul Rehman",
+  initials: "AR",
   role: "Meta Ads & Google Ads Specialist",
+  tagline: "Paid Ads & Lead Gen Specialist", // shown under the logo wordmark
   email: "hello@example.com", // TODO: replace with your real email
   bookCallSubject: "Free 20-min strategy call",
   linkedin: "https://www.linkedin.com/in/your-profile", // TODO

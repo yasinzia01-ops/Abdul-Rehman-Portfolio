@@ -1,4 +1,5 @@
-import { mailtoHref, site } from "../siteData";
+import { mailtoHref } from "../siteData";
+import Logo from "./Logo";
 
 export default function Nav() {
   return (
@@ -8,7 +9,7 @@ export default function Nav() {
       </a>
       <div className="nav__inner">
         <a href="#top" className="nav__logo">
-          {site.name}
+          <Logo />
         </a>
         <nav className="nav__links" aria-label="Primary">
           <a href="#services">Services</a>
