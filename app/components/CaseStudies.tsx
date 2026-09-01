@@ -1,10 +1,28 @@
 const outcomes = [
-  { region: "Texas home services", result: "3x qualified leads in 45 days" },
-  { region: "UK coaching brand", result: "Cost per lead cut by 62% in 30 days" },
-  { region: "UAE consulting firm", result: "$40,000 pipeline in 60 days" },
-  { region: "US local service directory", result: "Lead volume tripled after Google Ads rebuild" },
-  { region: "Canadian clinic", result: "2x booked calls in 90 days" },
-  { region: "12-month e-commerce retainer", result: "2.1x ROAS sustained over 12 months" },
+  {
+    region: "Luxembourg dental clinic (talpadent.lu)",
+    result: "Organic clicks up 297% in 6 months",
+  },
+  {
+    region: "Czech B2B software company (autoerp.cz)",
+    result: "8x more organic clicks — page 3 to page 1",
+  },
+  {
+    region: "New client site — SEO from launch",
+    result: "0 to 119 clicks with a 23.4% CTR in 6 months",
+  },
+  {
+    region: "New client site — SEO from launch",
+    result: "0 to 1,390 organic clicks in 6 months",
+  },
+  {
+    region: "New client site — SEO from launch",
+    result: "0 to 2,100+ impressions in first 6 months",
+  },
+  {
+    region: "Established client site",
+    result: "Organic impressions up 35% with stronger rankings",
+  },
 ];
 
 export default function CaseStudies() {
@@ -14,13 +32,11 @@ export default function CaseStudies() {
         <p className="eyebrow">Selected Outcomes</p>
         <h2 className="section__title">Recent results</h2>
         <div className="caseStudies__grid">
-          {outcomes.map((item) => (
-            <div className="caseCard" key={item.region}>
+          {outcomes.map((item, i) => (
+            <div className="caseCard" key={item.region + i}>
               <p className="caseCard__region">{item.region}</p>
               <p className="caseCard__result">{item.result}</p>
-              <p className="caseCard__verified">
-                Verified outcome — reference available on request
-              </p>
+              <p className="caseCard__verified">Source: Google Search Console</p>
             </div>
           ))}
         </div>
