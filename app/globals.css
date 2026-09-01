@@ -888,6 +888,51 @@ img {
   }
 }
 
+/* Case study gallery */
+
+.caseGallery__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.caseGalleryCard__image {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.caseGalleryCard__image img {
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.caseGalleryCard:hover .caseGalleryCard__image img {
+  transform: scale(1.04);
+}
+
+.caseGalleryCard figcaption {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.4;
+}
+
+@media (max-width: 900px) {
+  .caseGallery__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .caseGallery__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* FAQ */
 
 .faq__list {

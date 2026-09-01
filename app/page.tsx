@@ -4,6 +4,7 @@ import ProofStrip from "./components/ProofStrip";
 import About from "./components/About";
 import Services from "./components/Services";
 import CaseStudies from "./components/CaseStudies";
+import CaseStudyGallery from "./components/CaseStudyGallery";
 import Philosophy from "./components/Philosophy";
 import AboutMe from "./components/AboutMe";
 import Process from "./components/Process";
@@ -22,6 +23,7 @@ export default function Home() {
         <About />
         <Services />
         <CaseStudies />
+        <CaseStudyGallery />
         <Philosophy />
         <AboutMe />
         <Process />
