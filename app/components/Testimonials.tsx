@@ -1,43 +1,36 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 
 const testimonials = [
   {
     quote:
-      "Structured, data-driven, and easy to work with — the campaign architecture was exactly what our team needed.",
-    name: "Placeholder Name",
-    role: "Director, Placeholder Organization",
+      "Over the past decade, Abdul is the best growth partner I've worked with. He delivered a complex MVP fast, understood vague requirements, communicated clearly, and built a scalable complex system beyond expectations.",
+    name: "Frida Brunetti",
+    role: "Founder, Veya",
+    image: "/images/testimonials/Frida01.jpeg",
   },
   {
     quote:
-      "Exceptional communication and unwavering commitment to the results we agreed on from day one.",
-    name: "Placeholder Name",
-    role: "CEO, Placeholder Company",
+      "Abdul is a team player who works hard to deliver. Not calculative about the time needed to perfect things — he ensures the project is completed successfully. Always willing to help when required.",
+    name: "Angela Tan",
+    role: "Programme Director (Digital), Public Sector · GCC",
+    image: "/images/testimonials/Tan02.jpeg",
   },
   {
     quote:
-      "One of the best growth partners I've worked with across the last decade.",
-    name: "Placeholder Name",
-    role: "Founder, Placeholder Brand",
+      "Abdul's expertise in website design, development, and social media marketing is simply outstanding. Exceptional communication and unwavering commitment to deadlines. Invaluable to any project. I wholeheartedly recommend him.",
+    name: "Matthew Palmer",
+    role: "CEO, ITK Technologies",
+    image: "/images/testimonials/Matthew03.jpeg",
   },
   {
     quote:
-      "Great teamwork and a real commitment to quality throughout the whole engagement.",
-    name: "Placeholder Name",
-    role: "Programme Director, Placeholder Org",
-  },
-  {
-    quote:
-      "Clear reporting and honest updates every step of the way — always knew where the budget was going.",
-    name: "Placeholder Name",
-    role: "Owner, Placeholder Business",
-  },
-  {
-    quote:
-      "Took the time to understand the offer before touching the ad account. Results followed quickly.",
-    name: "Placeholder Name",
-    role: "Marketing Lead, Placeholder Co",
+      "This was not a standard website project. We required structured data architecture, backend logic, automated workflows and real time reporting dashboards. Abdul and his team delivered exceptionally.",
+    name: "Aly Saghir",
+    role: "Programme Director (Digital), Public Sector · GCC",
+    image: "/images/testimonials/Aly04.jpeg",
   },
 ];
 
@@ -116,12 +109,21 @@ export default function Testimonials() {
       </div>
       <div className="testimonials__track" ref={trackRef}>
         {testimonials.map((t) => (
-          <blockquote className="testimonialCard" key={t.name + t.role + t.quote}>
+          <blockquote className="testimonialCard" key={t.name}>
             <p>&ldquo;{t.quote}&rdquo;</p>
             <hr className="testimonialCard__divider" />
             <footer>
-              <span className="testimonialCard__name">{t.name}</span>
-              <span className="testimonialCard__role">{t.role}</span>
+              <Image
+                src={t.image}
+                alt={t.name}
+                width={44}
+                height={44}
+                className="testimonialCard__avatar"
+              />
+              <span className="testimonialCard__meta">
+                <span className="testimonialCard__name">{t.name}</span>
+                <span className="testimonialCard__role">{t.role}</span>
+              </span>
             </footer>
           </blockquote>
         ))}
