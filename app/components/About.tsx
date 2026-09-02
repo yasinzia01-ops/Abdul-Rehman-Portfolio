@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function About() {
   return (
     <section className="section about">
@@ -14,8 +16,13 @@ export default function About() {
               <li>Why I work on fixed-scope launches, not open-ended hours</li>
             </ul>
           </div>
-          <div className="about__image" aria-hidden="true">
-            <span>Photo / campaign screenshot placeholder</span>
+          <div className="about__image">
+            <Image
+              src="/images/Marketer/dashboard-screenshot.webp"
+              alt="Campaign dashboard overview"
+              fill
+              sizes="(max-width: 800px) 100vw, 50vw"
+            />
           </div>
         </div>
       </div>

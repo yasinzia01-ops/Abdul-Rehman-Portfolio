@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { site } from "../siteData";
 
 const tools = [
@@ -21,8 +22,13 @@ export default function AboutMe() {
   return (
     <section id="about" className="section aboutMe">
       <div className="section__inner aboutMe__grid">
-        <div className="aboutMe__portrait" aria-hidden="true">
-          <span>Photo placeholder</span>
+        <div className="aboutMe__portrait">
+          <Image
+            src="/images/Hamza/portrait.jpg"
+            alt={site.name}
+            fill
+            sizes="(max-width: 800px) 220px, 280px"
+          />
         </div>
         <div className="aboutMe__copy">
           <p className="eyebrow">About {site.name}</p>
