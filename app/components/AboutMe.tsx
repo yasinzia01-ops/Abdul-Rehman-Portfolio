@@ -13,7 +13,6 @@ const tools = [
 
 const credentials = [
   { label: "Upwork", value: "Top Rated (placeholder)" },
-  { label: "LinkedIn", value: "10+ recommendations (placeholder)" },
   { label: "Google Ads", value: "Certified (placeholder)" },
   { label: "Meta Blueprint", value: "Certified (placeholder)" },
 ];

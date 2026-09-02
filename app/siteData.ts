@@ -6,10 +6,9 @@ export const site = {
   initials: "H",
   role: "Meta Ads & Google Ads Specialist",
   tagline: "Paid Ads & Lead Gen Specialist", // shown under the logo wordmark
-  email: "hello@example.com", // TODO: replace with your real email
+  email: "hamzaabdurrehman18@gmail.com",
   bookCallSubject: "Free 20-min strategy call",
-  linkedin: "https://www.linkedin.com/in/your-profile", // TODO
-  instagram: "https://www.instagram.com/your-profile", // TODO
+  upwork: "https://www.upwork.com/freelancers/~your-id", // TODO: replace with your real Upwork profile URL
   capacityNote: "Taking on 2 new clients this month", // TODO: update monthly
 };
 

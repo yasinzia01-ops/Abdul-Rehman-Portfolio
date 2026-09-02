@@ -9,11 +9,8 @@ export default function Footer() {
           <Logo />
         </a>
         <div className="footer__links">
-          <a href={site.linkedin} target="_blank" rel="noopener noreferrer">
-            LinkedIn
-          </a>
-          <a href={site.instagram} target="_blank" rel="noopener noreferrer">
-            Instagram
+          <a href={site.upwork} target="_blank" rel="noopener noreferrer">
+            Upwork
           </a>
           <a href={mailtoHref}>{site.email}</a>
         </div>
