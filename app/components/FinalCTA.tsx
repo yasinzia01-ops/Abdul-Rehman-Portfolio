@@ -1,4 +1,4 @@
-import { mailtoHref, site } from "../siteData";
+import { bookCallHref, site } from "../siteData";
 
 export default function FinalCTA() {
   return (
@@ -9,7 +9,12 @@ export default function FinalCTA() {
           A free 20-minute call — no pitch deck, no proposal until we&apos;ve
           spoken.
         </p>
-        <a href={mailtoHref} className="btn btn--primary">
+        <a
+          href={bookCallHref}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn--primary"
+        >
           Book a Free 20-min Call
         </a>
         <p className="finalCta__capacity">{site.capacityNote}</p>

@@ -1,4 +1,4 @@
-import { mailtoHref } from "../siteData";
+import { bookCallHref } from "../siteData";
 
 export default function Hero() {
   return (
@@ -15,7 +15,12 @@ export default function Hero() {
           campaigns, not a vendor you have to manage.
         </p>
         <div className="hero__ctas">
-          <a href={mailtoHref} className="btn btn--primary">
+          <a
+            href={bookCallHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn--primary"
+          >
             Book a Free 20-min Call
           </a>
           <a href="#work" className="btn btn--ghost">

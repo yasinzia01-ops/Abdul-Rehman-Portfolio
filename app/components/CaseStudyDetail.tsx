@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { CaseStudy } from "../caseStudiesData";
-import { mailtoHref } from "../siteData";
+import { bookCallHref } from "../siteData";
 
 export default function CaseStudyDetail({ study }: { study: CaseStudy }) {
   return (
@@ -71,7 +71,12 @@ export default function CaseStudyDetail({ study }: { study: CaseStudy }) {
 
         <div className="csDetail__cta">
           <h2 className="csDetail__heading">Want results like this?</h2>
-          <a href={mailtoHref} className="btn btn--primary">
+          <a
+            href={bookCallHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn--primary"
+          >
             Book a Free 20-min Call
           </a>
         </div>

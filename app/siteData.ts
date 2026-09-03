@@ -9,9 +9,13 @@ export const site = {
   email: "hamzaabdurrehman18@gmail.com",
   bookCallSubject: "Free 20-min strategy call",
   upwork: "https://www.upwork.com/freelancers/~your-id", // TODO: replace with your real Upwork profile URL
+  calendly: "https://calendly.com/hamzaabdurrehman18/30min",
   capacityNote: "Taking on 2 new clients this month", // TODO: update monthly
 };
 
 export const mailtoHref = `mailto:${site.email}?subject=${encodeURIComponent(
   site.bookCallSubject
 )}`;
+
+// Used for every "Book a Free Call" button across the site.
+export const bookCallHref = site.calendly;

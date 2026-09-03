@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { mailtoHref } from "../siteData";
+import { bookCallHref } from "../siteData";
 import Logo from "./Logo";
 
 export default function Nav() {
@@ -18,7 +18,12 @@ export default function Nav() {
           <Link href="/#about">About</Link>
           <Link href="/#faq">FAQ</Link>
         </nav>
-        <a href={mailtoHref} className="btn btn--primary btn--small">
+        <a
+          href={bookCallHref}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn--primary btn--small"
+        >
           Book a Free Call
         </a>
       </div>
