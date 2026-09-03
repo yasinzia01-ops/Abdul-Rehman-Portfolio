@@ -27,18 +27,13 @@ export default function Process() {
       <div className="section__inner">
         <p className="eyebrow">How It Works</p>
         <h2 className="section__title">A simple, four-step process</h2>
-        <ol className="process__list">
+        <ol className="process__row">
           {steps.map((step, i) => (
             <li className="processStep" key={step.title}>
-              <span className="processStep__num">
-                {String(i + 1).padStart(2, "0")}
-              </span>
-              <div>
-                <h3>
-                  {step.title} <span className="processStep__meta">— {step.meta}</span>
-                </h3>
-                <p>{step.body}</p>
-              </div>
+              <span className="processStep__num">{i + 1}</span>
+              <h3 className="processStep__title">{step.title}</h3>
+              <p className="processStep__meta">{step.meta}</p>
+              <p className="processStep__body">{step.body}</p>
             </li>
           ))}
         </ol>

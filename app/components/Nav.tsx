@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { mailtoHref } from "../siteData";
 import Logo from "./Logo";
 
@@ -8,13 +9,13 @@ export default function Nav() {
         Skip to content
       </a>
       <div className="nav__inner">
-        <a href="#top" className="nav__logo">
+        <Link href="/#top" className="nav__logo">
           <Logo />
-        </a>
+        </Link>
         <nav className="nav__links" aria-label="Primary">
-          <a href="#work">Work</a>
-          <a href="#about">About</a>
-          <a href="#faq">FAQ</a>
+          <Link href="/#work">Work</Link>
+          <Link href="/#about">About</Link>
+          <Link href="/#faq">FAQ</Link>
         </nav>
         <a href={mailtoHref} className="btn btn--primary btn--small">
           Book a Free Call
