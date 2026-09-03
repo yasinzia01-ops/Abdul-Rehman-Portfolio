@@ -12,7 +12,6 @@ export default function Nav() {
           <Logo />
         </a>
         <nav className="nav__links" aria-label="Primary">
-          <a href="#services">Services</a>
           <a href="#work">Work</a>
           <a href="#about">About</a>
           <a href="#faq">FAQ</a>

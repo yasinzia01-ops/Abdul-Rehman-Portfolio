@@ -2,11 +2,11 @@ import Nav from "./components/Nav";
 import Hero from "./components/Hero";
 import ProofStrip from "./components/ProofStrip";
 import About from "./components/About";
-import Services from "./components/Services";
 import CaseStudies from "./components/CaseStudies";
 import CaseStudyGallery from "./components/CaseStudyGallery";
 import Philosophy from "./components/Philosophy";
 import AboutMe from "./components/AboutMe";
+import Certifications from "./components/Certifications";
 import Process from "./components/Process";
 import Testimonials from "./components/Testimonials";
 import FAQ from "./components/FAQ";
@@ -21,11 +21,11 @@ export default function Home() {
         <Hero />
         <ProofStrip />
         <About />
-        <Services />
         <CaseStudies />
         <CaseStudyGallery />
         <Philosophy />
         <AboutMe />
+        <Certifications />
         <Process />
         <Testimonials />
         <FAQ />
