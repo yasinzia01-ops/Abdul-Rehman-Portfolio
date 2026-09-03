@@ -664,7 +664,7 @@ img {
 }
 
 .aboutMe__portrait img {
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .aboutMe__copy p {

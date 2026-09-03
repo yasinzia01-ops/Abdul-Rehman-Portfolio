@@ -24,7 +24,7 @@ export default function AboutMe() {
       <div className="section__inner aboutMe__grid">
         <div className="aboutMe__portrait">
           <Image
-            src="/images/Hamza/portrait.jpg"
+            src="/images/Hamza/Hamza.jpg"
             alt={site.name}
             fill
             sizes="(max-width: 800px) 220px, 280px"
