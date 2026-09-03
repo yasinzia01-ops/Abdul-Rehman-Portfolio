@@ -899,6 +899,16 @@ img {
 
 /* Certifications */
 
+.certifications .eyebrow {
+  text-align: center;
+}
+
+.certifications .section__title {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .certifications__grid {
   display: flex;
   flex-wrap: wrap;

@@ -1,7 +1,6 @@
 import Image from "next/image";
 
 const badges = [
-  { label: "Google", image: "/images/certifications/google.png" },
   { label: "Google Ads Search — Certified", image: "/images/certifications/google-ads-search.png" },
   { label: "Google Ads Display — Certified", image: "/images/certifications/google-ads-display.png" },
   { label: "Google Ads Video — Certified", image: "/images/certifications/google-ads-video.png" },
