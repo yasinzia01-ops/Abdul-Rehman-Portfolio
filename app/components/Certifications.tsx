@@ -1,21 +1,9 @@
 import Image from "next/image";
 
 const badges = [
-  {
-    label: "Search",
-    alt: "Google Ads Search — Certified",
-    image: "/images/certifications/google-ads-search.png",
-  },
-  {
-    label: "Display",
-    alt: "Google Ads Display — Certified",
-    image: "/images/certifications/google-ads-display.png",
-  },
-  {
-    label: "Video",
-    alt: "Google Ads Video — Certified",
-    image: "/images/certifications/google-ads-video.png",
-  },
+  { alt: "Google Ads Search — Certified", image: "/images/certifications/google-ads-search.png" },
+  { alt: "Google Ads Display — Certified", image: "/images/certifications/google-ads-display.png" },
+  { alt: "Google Ads Video — Certified", image: "/images/certifications/google-ads-video.png" },
 ];
 
 export default function Certifications() {
@@ -28,11 +16,8 @@ export default function Certifications() {
         </div>
         <div className="certifications__grid">
           {badges.map((b) => (
-            <div className="certBadge" key={b.label}>
-              <div className="certBadge__image">
-                <Image src={b.image} alt={b.alt} fill sizes="110px" />
-              </div>
-              <p className="certBadge__label">{b.label}</p>
+            <div className="certBadge__image" key={b.alt}>
+              <Image src={b.image} alt={b.alt} fill sizes="70px" />
             </div>
           ))}
         </div>
