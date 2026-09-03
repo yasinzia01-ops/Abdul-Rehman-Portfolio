@@ -46,7 +46,7 @@ export default function CaseStudyGallery() {
   };
 
   return (
-    <section className="section caseGallery">
+    <section id="case-studies" className="section caseGallery">
       <div className="section__inner">
         <div className="caseGallery__head">
           <div>

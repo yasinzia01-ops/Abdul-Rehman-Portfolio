@@ -14,6 +14,7 @@ export default function Nav() {
         </Link>
         <nav className="nav__links" aria-label="Primary">
           <Link href="/#work">Work</Link>
+          <Link href="/#case-studies">Case Study</Link>
           <Link href="/#about">About</Link>
           <Link href="/#faq">FAQ</Link>
         </nav>

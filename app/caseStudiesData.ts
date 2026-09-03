@@ -118,7 +118,7 @@ export const caseStudies: CaseStudy[] = [
     ],
     testimonial: {
       quote:
-        "Brandiv Labs didn't just redesign our website. They transformed how ANSADE serves the nation. The platform is fast, secure, and intuitive — our researchers can access data in minutes instead of hours.",
+        "The team didn't just redesign our website. They transformed how ANSADE serves the nation. The platform is fast, secure, and intuitive — our researchers can access data in minutes instead of hours.",
       name: "Dr. Amina Hassan",
       role: "Director of ANSADE",
     },

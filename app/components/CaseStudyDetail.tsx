@@ -7,7 +7,7 @@ export default function CaseStudyDetail({ study }: { study: CaseStudy }) {
   return (
     <main id="content" className="csDetail">
       <div className="section__inner csDetail__header">
-        <Link href="/#work" className="csDetail__back">
+        <Link href="/#case-studies" className="csDetail__back">
           ← Back to case studies
         </Link>
         <p className="eyebrow">{study.industry}</p>
