@@ -17,7 +17,7 @@ export default function Certifications() {
         <div className="certifications__grid">
           {badges.map((b) => (
             <div className="certBadge__image" key={b.alt}>
-              <Image src={b.image} alt={b.alt} fill sizes="70px" />
+              <Image src={b.image} alt={b.alt} fill sizes="90px" />
             </div>
           ))}
         </div>
