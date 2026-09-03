@@ -599,7 +599,7 @@ img {
 }
 
 .aboutMe__portrait img {
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .aboutMe__copy p {
@@ -899,21 +899,37 @@ img {
 
 /* Certifications */
 
-.certifications .eyebrow {
-  text-align: center;
+.certifications {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
-.certifications .section__title {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+.certifications__layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 2rem;
+}
+
+.certifications__intro .section__title {
+  margin-bottom: 0;
 }
 
 .certifications__grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 3rem;
+  justify-content: flex-end;
+  gap: 2.5rem;
+}
+
+@media (max-width: 800px) {
+  .certifications__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .certifications__grid {
+    justify-content: flex-start;
+  }
 }
 
 .certBadge {

@@ -9,9 +9,11 @@ const badges = [
 export default function Certifications() {
   return (
     <section className="section certifications">
-      <div className="section__inner">
-        <p className="eyebrow">Certifications</p>
-        <h2 className="section__title">Certified across Google Ads</h2>
+      <div className="section__inner certifications__layout">
+        <div className="certifications__intro">
+          <p className="eyebrow">Certifications</p>
+          <h2 className="section__title">Certified across Google Ads</h2>
+        </div>
         <div className="certifications__grid">
           {badges.map((b) => (
             <div className="certBadge" key={b.label}>
