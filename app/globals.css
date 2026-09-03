@@ -902,6 +902,11 @@ img {
 .certifications {
   padding-top: 0;
   padding-bottom: 0;
+  border-top: none;
+}
+
+.certifications + .section {
+  border-top: none;
 }
 
 .certifications__layout {
