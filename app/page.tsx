@@ -1,4 +1,6 @@
 import Nav from "./components/Nav";
+import StatsBar from "./components/StatsBar";
+import ClientPortfolio from "./components/ClientPortfolio";
 import Hero from "./components/Hero";
 import ProofStrip from "./components/ProofStrip";
 import About from "./components/About";
@@ -9,7 +11,6 @@ import AboutMe from "./components/AboutMe";
 import Certifications from "./components/Certifications";
 import Process from "./components/Process";
 import Testimonials from "./components/Testimonials";
-import ClientPortfolio from "./components/ClientPortfolio";
 import FAQ from "./components/FAQ";
 import FinalCTA from "./components/FinalCTA";
 import Footer from "./components/Footer";
@@ -19,6 +20,8 @@ export default function Home() {
     <>
       <Nav />
       <main id="content">
+        <StatsBar />
+        <ClientPortfolio />
         <Hero />
         <About />
         <CaseStudies />
