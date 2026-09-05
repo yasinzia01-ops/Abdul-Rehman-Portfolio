@@ -20,9 +20,9 @@ export default function Home() {
     <>
       <Nav />
       <main id="content">
-        <StatsBar />
-        <ClientPortfolio />
         <Hero />
+        <StatsBar />
+        <ProofStrip />
         <About />
         <CaseStudies />
         <CaseStudyGallery />
@@ -32,7 +32,6 @@ export default function Home() {
         <Process />
         <Testimonials />
         <ClientPortfolio />
-        <ProofStrip />
         <FAQ />
         <FinalCTA />
       </main>
