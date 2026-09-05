@@ -9,6 +9,7 @@ import AboutMe from "./components/AboutMe";
 import Certifications from "./components/Certifications";
 import Process from "./components/Process";
 import Testimonials from "./components/Testimonials";
+import ClientPortfolio from "./components/ClientPortfolio";
 import FAQ from "./components/FAQ";
 import FinalCTA from "./components/FinalCTA";
 import Footer from "./components/Footer";
@@ -19,7 +20,6 @@ export default function Home() {
       <Nav />
       <main id="content">
         <Hero />
-        <ProofStrip />
         <About />
         <CaseStudies />
         <CaseStudyGallery />
@@ -28,6 +28,8 @@ export default function Home() {
         <Certifications />
         <Process />
         <Testimonials />
+        <ClientPortfolio />
+        <ProofStrip />
         <FAQ />
         <FinalCTA />
       </main>
