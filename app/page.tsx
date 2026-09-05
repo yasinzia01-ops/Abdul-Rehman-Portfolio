@@ -32,6 +32,7 @@ export default function Home() {
         <Process />
         <Testimonials />
         <ClientPortfolio />
+        <ProofStrip />
         <FAQ />
         <FinalCTA />
       </main>
