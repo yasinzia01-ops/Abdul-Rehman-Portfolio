@@ -16,6 +16,7 @@ const credentials = [
   { label: "Upwork", value: "Top Rated (placeholder)" },
   { label: "Google Ads", value: "Certified (placeholder)" },
   { label: "Meta Blueprint", value: "Certified (placeholder)" },
+  { label: "SEO Expert", value: "Certified (placeholder)" },
 ];
 
 export default function AboutMe() {

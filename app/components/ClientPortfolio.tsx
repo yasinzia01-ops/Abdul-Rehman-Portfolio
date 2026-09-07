@@ -29,6 +29,16 @@ const categories = [
       "SEO + CRO · Singapore B2B",
     ],
   },
+  {
+    label: "SEO",
+    tags: [
+      "Dental SEO · +2,539% clicks",
+      "E-commerce SEO · $575k revenue",
+      "Multi-location SEO · 14 clinics",
+      "Technical SEO Audit · Enterprise",
+      "Local SEO · Page 1 in 90 days",
+    ],
+  },
 ];
 
 export default function ClientPortfolio() {

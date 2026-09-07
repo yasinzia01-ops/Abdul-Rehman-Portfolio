@@ -410,9 +410,16 @@ img {
 
 .carousel__tile--image {
   position: relative;
-  flex-basis: 340px;
+  flex-basis: calc(50vw - 1.5rem);
+  max-width: 640px;
   aspect-ratio: 16 / 10;
   padding: 0.5rem;
+}
+
+@media (max-width: 700px) {
+  .carousel__tile--image {
+    flex-basis: 82vw;
+  }
 }
 
 .carousel__tile--image img {
