@@ -7,6 +7,11 @@ const screenshots = Array.from({ length: 8 }, (_, i) => ({
 
 const loopShots = [...screenshots, ...screenshots];
 
+// loading="eager" on every tile: the track is moved purely via a CSS
+// transform animation, not real scrolling, so the browser's native lazy-load
+// IntersectionObserver never sees off-screen-but-transformed tiles enter the
+// viewport and leaves them permanently unfetched (blank tiles).
+
 export default function ProofStrip({ large = false }: { large?: boolean }) {
   return (
     <section className="section proofStrip">
@@ -22,7 +27,13 @@ export default function ProofStrip({ large = false }: { large?: boolean }) {
               key={`${shot.src}-${i}`}
               aria-hidden={i >= screenshots.length}
             >
-              <Image src={shot.src} alt={shot.alt} fill sizes={large ? "640px" : "360px"} />
+              <Image
+                src={shot.src}
+                alt={shot.alt}
+                fill
+                sizes={large ? "640px" : "360px"}
+                loading="eager"
+              />
             </div>
           ))}
         </div>
