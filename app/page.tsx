@@ -31,7 +31,7 @@ export default function Home() {
         <Certifications />
         <Process />
         <Testimonials />
-        <ProofStrip />
+        <ProofStrip large />
         <ClientPortfolio />
         <FAQ />
         <FinalCTA />

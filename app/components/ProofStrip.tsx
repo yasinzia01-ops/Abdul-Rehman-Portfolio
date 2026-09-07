@@ -7,10 +7,14 @@ const screenshots = Array.from({ length: 8 }, (_, i) => ({
 
 const loopShots = [...screenshots, ...screenshots];
 
-export default function ProofStrip() {
+export default function ProofStrip({ large = false }: { large?: boolean }) {
   return (
     <section className="section proofStrip">
-      <div className="carousel" role="region" aria-label="Recent client campaign result screenshots">
+      <div
+        className={`carousel${large ? " carousel--large" : ""}`}
+        role="region"
+        aria-label="Recent client campaign result screenshots"
+      >
         <div className="carousel__track carousel__track--images">
           {loopShots.map((shot, i) => (
             <div
@@ -18,7 +22,7 @@ export default function ProofStrip() {
               key={`${shot.src}-${i}`}
               aria-hidden={i >= screenshots.length}
             >
-              <Image src={shot.src} alt={shot.alt} fill sizes="360px" />
+              <Image src={shot.src} alt={shot.alt} fill sizes={large ? "640px" : "360px"} />
             </div>
           ))}
         </div>
